@@ -1,0 +1,9 @@
+{% extends 'index.html' %}
+{% block content %}
+    {% for foods in foods_list  %}
+        <span style="font-weight: bolder">{{ foods.id }}</span>
+        <span style="font-weight: bolder">{{ foods.food_name }}</span>
+        <span style="font-weight: bolder">{{ foods.food_price }}</span>
+    {% endfor %}
+    <a href="/about">about</a>
+{% endblock content %}
